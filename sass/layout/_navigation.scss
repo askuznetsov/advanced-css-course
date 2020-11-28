@@ -3,7 +3,7 @@
         display: none;
     }
 
-    &__button {
+    &__btn {
         background-color: $color-white;
         height: 7rem;
         width: 7rem;
@@ -27,7 +27,7 @@
         }
     }
 
-    &__background {
+    &__back {
         height: 6rem;
         width: 6rem;
         border-radius: 50%;
@@ -61,7 +61,7 @@
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
-    &__list {
+    &__group {
         position: absolute;
         top: 50%;
         left: 65%;
@@ -71,11 +71,11 @@
         width: 100%;
     }
 
-    &__item {
+    &__object {
         margin: 1rem;
     }
 
-    &__link {
+    &__bond {
 
         &:link,
         &:visited {
@@ -105,7 +105,7 @@
     }
 
     // FUNCTIONALITY
-    &__checkbox:checked~&__background {
+    &__checkbox:checked~&__back {
         transform: scale(80);
     }
 
@@ -116,7 +116,7 @@
 
 
     // ICON
-    &__icon {
+    &__ico {
         position: relative;
         margin-top: 3.5rem;
 
@@ -146,24 +146,24 @@
         }
     }
 
-    &__button:hover &__icon::before {
+    &__btn:hover &__ico::before {
         top: -1rem;
     }
 
-    &__button:hover &__icon::after {
+    &__btn:hover &__ico::after {
         top: 1rem;
     }
 
-    &__checkbox:checked+&__button &__icon {
+    &__checkbox:checked+&__btn &__ico {
         background-color: transparent;
     }
 
-    &__checkbox:checked+&__button &__icon::before {
+    &__checkbox:checked+&__btn &__ico::before {
         top: 0;
         transform: rotate(135deg);
     }
 
-    &__checkbox:checked+&__button &__icon::after {
+    &__checkbox:checked+&__btn &__ico::after {
         top: 0;
         transform: rotate(-135deg);
     }

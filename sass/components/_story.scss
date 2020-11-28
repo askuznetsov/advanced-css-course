@@ -19,7 +19,7 @@
         transform: skewX(0);
     }
 
-    &__shape {
+    &__form {
         width: 15rem;
         height: 15rem;
         float: left;
@@ -45,7 +45,7 @@
         transition: all .5s;
     }
 
-    &__text {
+    &__txt {
         transform: skewX(12deg);
 
         @include respond(phone) {

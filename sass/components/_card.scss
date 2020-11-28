@@ -1,4 +1,4 @@
-.card {
+.board {
 
     //FUNCTIONALITY
     perspective: 150rem;
@@ -7,7 +7,7 @@
     height: 52rem;
 
 
-    &__side {
+    &__view {
         height: 52rem;
         transition: all .8s ease;
 
@@ -24,7 +24,7 @@
             background-color: $color-white;
         }
 
-        &--back {
+        &--flip-side {
 
             transform: rotateY(180deg);
 
@@ -42,17 +42,17 @@
         }
     }
 
-    &:hover &__side--front {
+    &:hover &__view--face {
         transform: rotateY(-180deg);
     }
 
-    &:hover &__side--back {
+    &:hover &__view--flip-side {
         transform: rotateY(0deg);
     }
 
 
-    // FRONT SIDE STYLING
-    &__picture {
+    // FRONT view STYLING
+    &__pic {
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
@@ -78,7 +78,7 @@
         }
     }
 
-    &__heading {
+    &__title {
         font-size: 2.8rem;
         font-weight: 300;
         text-transform: uppercase;
@@ -91,7 +91,7 @@
     }
 
 
-    &__heading-span {
+    &__title-span {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
@@ -116,7 +116,7 @@
         }
     }
 
-    &__details {
+    &__describe {
         padding: 3rem;
 
         ul {
@@ -136,7 +136,7 @@
         }
     }
 
-    // FRONT SIDE STYLING
+    // FRONT view STYLING
 
     &__cta {
         position: absolute;
@@ -147,18 +147,18 @@
         text-align: center;
     }
 
-    &__price-box {
+    &__price-container {
         text-align: center;
         margin-bottom: 8rem;
         color: $color-white;
     }
 
-    &__price-only {
+    &__price-txt {
         font-size: 1.4rem;
         text-transform: uppercase;
     }
 
-    &__price-value {
+    &__price-amount {
         font-size: 6rem;
         font-weight: 100;
     }
@@ -172,28 +172,28 @@
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-        &__side {
+        &__view {
             height: auto;
             position: relative;
             box-shadow: none;
 
-            &--back {
+            &--flip-side {
                 transform: rotateY(0deg);
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }
         }
 
-        &:hover &__side--front {
+        &:hover &__view--face {
             transform: rotateY(0);
         }
 
 
-        &__details {
+        &__describe {
             padding: 1rem 3rem;
         }
 
 
-        // FRONT SIDE STYLING
+        // FRONT view STYLING
 
         &__cta {
             position: relative;
@@ -204,11 +204,11 @@
             padding: 7rem 4rem 4rem 4rem;
         }
 
-        &__price-box {
+        &__price-container {
             margin-bottom: 3rem;
         }
 
-        &__price-value {
+        &__price-amount {
             font-size: 4rem;
         }
     }

@@ -17,7 +17,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 
-    &__logo-box {
+    &__logo-container {
         position: absolute;
         top: 4rem;
         left: 4rem;
@@ -27,7 +27,7 @@
         height: 3.5rem;
     }
 
-    &__text-box {
+    &__txt-container {
         position: absolute;
         top: 40%;
         left: 50%;

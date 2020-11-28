@@ -1,4 +1,4 @@
-.feature-box {
+.features-container {
     background-color: rgba($color-white, .8);
     font-size: 1.5rem;
     padding: 2.5rem;
@@ -11,7 +11,7 @@
         padding: 2rem;
     }
 
-    &__icon {
+    &__ico {
         font-size: 6rem;
         margin-bottom: .5rem;
         display: inline-block;

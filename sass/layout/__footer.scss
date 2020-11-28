@@ -8,7 +8,7 @@
         padding: 8rem 0;
     }
 
-    &__logo-box {
+    &__logo-container {
         text-align: center;
         margin-bottom: 8rem;
 
@@ -22,7 +22,7 @@
         height: auto;
     }
 
-    &__navigation {
+    &__nav {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
@@ -33,11 +33,11 @@
         } 
     }
 
-    &__list {
+    &__group {
         list-style: none;
     }
 
-    &__item {
+    &__object {
         display: inline-block;
 
         &:not(:last-child) {
@@ -45,7 +45,7 @@
         }
     }
 
-    &__link {
+    &__bond {
         &:link,
         &:visited {
             color: $color-grey-light-1;

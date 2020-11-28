@@ -1,4 +1,4 @@
-.composition {
+.compound {
     position: relative;
 
     &__photo {
@@ -17,7 +17,7 @@
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
         }
 
-        &--p1 {
+        &--first {
             left: 0;
             top: -2rem;
 
@@ -27,18 +27,18 @@
             }
         }
 
-        &--p2 {
+        &--second {
             right: 0;
             top: 2rem;
 
             @include respond(tab-port) {
                 top: -1rem;
-                transform: sclae(1.3);
+                transform: scale(1.3);
                 z-index: 100;
             }
         }
 
-        &--p3 {
+        &--third {
             left: 20%;
             top: 10rem;
 
